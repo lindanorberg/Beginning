@@ -18,12 +18,12 @@ h1 {
   width: 400px;
 }
 
-input {
+.inputs {
   margin: inherit;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.MoreOptions {
+input{
   margin-top: 10px;
-  margin-bottom: 20px;
 }

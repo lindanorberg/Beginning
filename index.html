@@ -12,8 +12,22 @@
       <div class="inputs">
         <input placeholder="Wishes"></input>
       </div>
-      <button class="MoreOptions">More</button>
+      <button class="moreOptions">More</button>
     </div>
-    <button>Crack it open!</button>
+    <div class="resultSection"></div>
+    <button>Open it!</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+    }
+
+    $('.moreOptions').click(add_option)
+    })
+    </script>
   </body>
 </html>
