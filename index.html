@@ -7,15 +7,15 @@
   </head>
   <body>
     <img src="/Users/lindanorberg/Documents/Code/beginning/rainbow.png" width="175" height="90">
-    <h1>What would you like your future to be?</h1>
+    <h1>Vad ska jag välja?</h1>
     <div class="inputSection">
       <div class="inputs">
-        <input placeholder="Wishes"></input>
+        <input placeholder="..."></input>
       </div>
-      <button class="moreOptions">More</button>
+      <button class="moreOptions">Fler val</button>
     </div>
     <div class="resultSection"></div>
-    <button class="submit">Open it!</button>
+    <button class="submit">Välj</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
@@ -38,10 +38,15 @@
           var winner = options[Math.floor(Math.random() * options.length)]
           console.log(winner)
           $('.resultSection').text(winner)
+
           $('.submit').hide()
+          $('.refresh').show()
         }
         $('.submit').click(submit)
+        $('.refresh').hide()
       })
     </script>
-  </body>
+    <div class="refreshSection"></div>
+    <button class="refresh" type="button" onClick="window.location.reload();">Gör om</button>
+      </body>
 </html>
